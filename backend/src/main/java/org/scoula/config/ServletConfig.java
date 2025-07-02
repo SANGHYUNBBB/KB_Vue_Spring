@@ -39,6 +39,7 @@ public class ServletConfig implements WebMvcConfigurer {
         // Swagger 리소스 설정
         registry.addResourceHandler("/swagger-resources/**")
                 .addResourceLocations("classpath:/META-INF/resources/");
+        
         registry.addResourceHandler("/v2/api-docs")
                 .addResourceLocations("classpath:/META-INF/resources/");
 
